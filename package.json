@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-json/ph": "^1.1.10",
+    "@iconify-json/svg-spinners": "^1.1.2",
+    "@types/node": "^20.11.14",
+    "path": "^0.12.7",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
     "unocss": "^0.58.4",
@@ -17,6 +21,7 @@
     "unplugin-vue-router": "^0.7.0",
     "vite-plugin-progress": "^0.0.7",
     "vite-plugin-restart": "^0.4.0",
+    "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vue": "^3.3.11"
   },

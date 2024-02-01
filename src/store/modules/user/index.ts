@@ -4,6 +4,7 @@ import { setToken, clearToken } from '@/utils/auth';
 import { UserState } from './types';
 
 export const useUserStore = defineStore('user', {
+  //用来存储全局状态，它必须是箭头函数
   state: (): UserState => ({
     user_name: undefined,
     avatar: undefined,
@@ -17,11 +18,13 @@ export const useUserStore = defineStore('user', {
     devLanguages: undefined,
     role: '',
   }),
+  //就是用来封装计算属性，它有缓存的功能
   getters: {
     userProfile(state: UserState): UserState {
       return { ...state };
     },
   },
+  // 就是用来封装业务逻辑，修改 state
   actions: {
     switchRoles() {
       return new Promise((resolve) => {

@@ -13,6 +13,7 @@ import { ConfigPagesPlugin } from './pages';
 import { ConfigRestartPlugin } from './restart';
 import { ConfigProgressPlugin } from './progress';
 import { ConfigUnocssPlugin } from './unocss';
+import { ConfigSvgIconsPlugin } from './svgIcons';
 
 export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
   // const { VITE_USE_MOCK, VITE_USE_COMPRESS } = viteEnv;
@@ -42,6 +43,9 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean) {
 
   // unocss 即时按需的原子化 CSS 引擎
   vitePlugins.push(ConfigUnocssPlugin());
+
+  // vite-plugin-svg-icons svg图标
+  vitePlugins.push(ConfigSvgIconsPlugin(isBuild));
 
   return vitePlugins;
 }

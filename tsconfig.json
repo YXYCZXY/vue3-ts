@@ -21,7 +21,7 @@
     "lib": ["dom", "esnext"],
     "noImplicitAny": false,
     "skipLibCheck": true,
-    "types": ["element-plus/global", "naive-ui/volar"],
+    "types": ["element-plus/global", "naive-ui/volar","node"],
     "removeComments": true,
     "paths": {
       "@/*": ["src/*"],
