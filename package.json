@@ -11,8 +11,12 @@
   "dependencies": {
     "@iconify-json/ph": "^1.1.10",
     "@iconify-json/svg-spinners": "^1.1.2",
+    "@idux/cdk": "^2.0.0",
+    "@idux/components": "^2.0.0",
+    "@idux/pro": "^2.0.0",
     "@types/node": "^20.11.14",
     "axios": "^1.6.7",
+    "nprogress": "^0.2.0",
     "path": "^0.12.7",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
@@ -24,7 +28,8 @@
     "vite-plugin-restart": "^0.4.0",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-setup-extend": "^0.4.0",
-    "vue": "^3.3.11"
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
