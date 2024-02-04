@@ -1,6 +1,6 @@
 import { UserConfig, ConfigEnv, loadEnv } from 'vite';
 import { createVitePlugins } from './build/vite/plugins';
-
+import { fileURLToPath, URL } from 'node:url';
 import proxy from './build/vite/proxy';
 import { wrapperEnv } from './build/utils';
 
@@ -12,7 +12,12 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
   const viteEnv = wrapperEnv(env);
 
   return {
-
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '#': fileURLToPath(new URL('./types', import.meta.url)),
+      },
+    },
     // plugins
     plugins: createVitePlugins(viteEnv, isBuild),
 

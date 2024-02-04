@@ -12,6 +12,7 @@
     "@iconify-json/ph": "^1.1.10",
     "@iconify-json/svg-spinners": "^1.1.2",
     "@types/node": "^20.11.14",
+    "axios": "^1.6.7",
     "path": "^0.12.7",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
